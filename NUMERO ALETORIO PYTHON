@@ -1,0 +1,59 @@
+import os
+import random as rm
+import time as tm
+
+
+#Nombre del juego
+
+print("██████╗░░█████╗░███╗░░██╗██████╗░░█████╗░███╗░░░███╗")
+print("██╔══██╗██╔══██╗████╗░██║██╔══██╗██╔══██╗████╗░████║")
+print("██████╔╝███████║██╔██╗██║██║░░██║██║░░██║██╔████╔██║")
+print("██╔══██╗██╔══██║██║╚████║██║░░██║██║░░██║██║╚██╔╝██║")
+print("██║░░██║██║░░██║██║░╚███║██████╔╝╚█████╔╝██║░╚═╝░██║")
+print("╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═════╝░░╚════╝░╚═╝░░░░░╚═╝")
+
+tm.sleep(2)
+os.system('cls')
+
+while True:
+    
+    print("QUIERES JUGAR Y o N")
+    opc = input("JUEGAR : ")
+    
+    if opc == "y":
+        
+    
+        
+     while True:
+        
+        print("Mescalndo nuemros")
+        
+        i = 0
+        
+        while i<10:
+            n1=rm.randrange(1,5)
+            print(n1)
+            tm.sleep(0.1)
+            os.system('cls')
+            i += 1
+         
+        numero = rm.randrange(1,5)
+
+        num = int(input("cual es el numero: "))
+
+        if numero == num:
+             print("CORRECTO")
+        else:
+                 print("INCORRECTO")
+
+        if num > 5:
+                print("DEL 1 AL 5")
+
+        tm.sleep(2)
+        os.system('cls')
+         
+        break
+    elif opc == "n":
+        exit()
+
+
